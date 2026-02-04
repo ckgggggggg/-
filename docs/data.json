@@ -67,21 +67,21 @@
     "image_relpath": "image/general_SWX022800000017960234_jpg_2026_01_26_1769462720786_f5a25c63-770f-43d3-af3d-1f28b16889e1.jpg.jpg",
     "label_relpath": "label/general_SWX022800000017960234_jpg_2026_01_26_1769462720786_f5a25c63-770f-43d3-af3d-1f28b16889e1.jpg.txt",
     "label": {
-      "raw": "1,0,1,1,1",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
+        1,
         1,
         1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
         "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX022800000017960234_jpg_2026_01_26_1769462720787_0df05f33-9494-4d1e-b658-be86512bf9b4.jpg.jpg",

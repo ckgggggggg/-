@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(".")
 IMG_DIR = Path("/Users/chenkaige/Desktop/new-podv1/dataset/docs/image")
 LAB_DIR = Path("/Users/chenkaige/Desktop/new-podv1/dataset/docs/labels")
-OUT = ROOT / "data.json"
+OUT = ROOT / "/Users/chenkaige/Desktop/new-podv1/dataset/docs/data.json"
 
 STEP_KEYS = [
     "step1_valid_pod",
