@@ -445,21 +445,21 @@
     "image_relpath": "image/general_SWX117950000019420550_jpg_2026_01_24_1769284518038_5b5942e8-8f7a-4fe0-9403-05ae592a55d9.jpg.jpg",
     "label_relpath": "label/general_SWX117950000019420550_jpg_2026_01_24_1769284518038_5b5942e8-8f7a-4fe0-9403-05ae592a55d9.jpg.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX117950000019420550_jpg_2026_01_24_1769284518050_41d36bdd-9e9b-4c6c-807e-826a8f2df94d.jpg.jpg",
@@ -1180,7 +1180,7 @@
     "image_relpath": "image/general_SWX196570000019428042_jpg_2026_01_23_1769128945788_e12a1233-4a85-4411-9da8-6e2c08f8c70b.jpg.jpg",
     "label_relpath": "label/general_SWX196570000019428042_jpg_2026_01_23_1769128945788_e12a1233-4a85-4411-9da8-6e2c08f8c70b.jpg.txt",
     "label": {
-      "raw": "1,1,1,1,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
@@ -1369,21 +1369,21 @@
     "image_relpath": "image/general_SWX234370000017433609_jpg_2026_01_18_1768702942424_619d5f7b-1736-44c7-957b-97ba5d08118c.jpg.jpg",
     "label_relpath": "label/general_SWX234370000017433609_jpg_2026_01_18_1768702942424_619d5f7b-1736-44c7-957b-97ba5d08118c.jpg.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX299630000018026834_jpg_2026_01_26_1769390509125_782c2cc7-97b5-46de-8033-8e9d34f7971f.jpg.jpg",
@@ -1495,21 +1495,21 @@
     "image_relpath": "image/general_SWX311360000019091449_jpg_2026_01_28_1769622639946_b0f30cde-d87b-447f-ad9d-f8656dc4dd47.jpg.jpg",
     "label_relpath": "label/general_SWX311360000019091449_jpg_2026_01_28_1769622639946_b0f30cde-d87b-447f-ad9d-f8656dc4dd47.jpg.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX311360000019091449_jpg_2026_01_28_1769622639965_5e0a06fe-395d-420d-8bbf-e53c29605a82.jpg.jpg",
@@ -2734,21 +2734,21 @@
     "image_relpath": "image/general_SWX624060000021610049_jpg_2026_01_28_1769571928562_21590170-fcc6-4441-bc3a-6ade4e0fa9fd.jpg.jpg",
     "label_relpath": "label/general_SWX624060000021610049_jpg_2026_01_28_1769571928562_21590170-fcc6-4441-bc3a-6ade4e0fa9fd.jpg.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX624060000021610049_jpg_2026_01_28_1769571928562_295c1025-8a99-4879-9020-8fb530110bdb.jpg.jpg",
@@ -3847,21 +3847,21 @@
     "image_relpath": "image/general_SWX841130000020319647_jpg_2026_01_27_1769537200764_59610e31-3d52-4359-b725-96934fd1f3eb.jpg.jpg",
     "label_relpath": "label/general_SWX841130000020319647_jpg_2026_01_27_1769537200764_59610e31-3d52-4359-b725-96934fd1f3eb.jpg.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX841130000020319647_jpg_2026_01_27_1769537200784_fab595e8-9879-438c-ba33-cefc50ae52b1.jpg.jpg",
@@ -4246,21 +4246,21 @@
     "image_relpath": "image/general_SWX898930000019276390_jpg_2026_01_30_1769800830203_db88249c-21fb-408b-af50-24e900e50c24.jpg.jpg",
     "label_relpath": "label/general_SWX898930000019276390_jpg_2026_01_30_1769800830203_db88249c-21fb-408b-af50-24e900e50c24.jpg.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX928350000021674453_jpg_2026_01_28_1769632911372_802d711e-fbf5-4022-aa62-f389ca9ed45a.jpg.jpg",
@@ -4309,21 +4309,21 @@
     "image_relpath": "image/general_SWX928350000021674453_jpg_2026_01_28_1769632911401_8fee8f90-03e8-4032-b917-30d5acfb7479.jpg.jpg",
     "label_relpath": "label/general_SWX928350000021674453_jpg_2026_01_28_1769632911401_8fee8f90-03e8-4032-b917-30d5acfb7479.jpg.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX952300000020056178_jpg_2026_01_22_1769113351714_77be8c17-efcc-409d-9910-550750ec16be.jpg.jpg",
@@ -4582,21 +4582,21 @@
     "image_relpath": "image/general_SWX980510000021422493_jpg_2026_01_28_1769642984739_863453cd-ea05-489e-b00b-848137af83f6.jpg.jpg",
     "label_relpath": "label/general_SWX980510000021422493_jpg_2026_01_28_1769642984739_863453cd-ea05-489e-b00b-848137af83f6.jpg.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX985870000019433833_jpg_2026_01_28_1769641658039_78c31193-56fa-4148-9ed5-f0f7b4c4aa35.jpg.jpg",
@@ -4855,21 +4855,21 @@
     "image_relpath": "image/general_SWX990220000017799367_jpg_2026_01_16_1768590054002_ccd77aef-e7b5-40ab-b080-9b6eff3a3c92.jpg.jpg",
     "label_relpath": "label/general_SWX990220000017799367_jpg_2026_01_16_1768590054002_ccd77aef-e7b5-40ab-b080-9b6eff3a3c92.jpg.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX992820000021251286_jpg_2026_01_29_1769710930088_98022f59-66cf-46d0-bdd0-4e5f86f27d49.jpg.jpg",
@@ -5380,18 +5380,18 @@
     "image_relpath": "image/general_SWX025510000015096723_webp_2026_01_05_1767653209716_b487eecc-a3d0-48c2-aeb1-424cddc7b56b.webp.webp",
     "label_relpath": "label/general_SWX025510000015096723_webp_2026_01_05_1767653209716_b487eecc-a3d0-48c2-aeb1-424cddc7b56b.webp.txt",
     "label": {
-      "raw": "1,0,1,1,1",
+      "raw": "1,0,1,0,0",
       "values": [
         1,
         0,
         1,
-        1
+        0
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 0,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 1
+        "step4_valid_location": 0
       }
     },
     "overall_pass": 0
@@ -5506,21 +5506,21 @@
     "image_relpath": "image/general_SWX028230000018427807_webp_2026_01_21_1768956757512_f2fcd225-afd5-4a94-a790-fadb147d1acf.webp.webp",
     "label_relpath": "label/general_SWX028230000018427807_webp_2026_01_21_1768956757512_f2fcd225-afd5-4a94-a790-fadb147d1acf.webp.txt",
     "label": {
-      "raw": "1,1,0,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
-        0,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
-        "step3_not_in_mailbox": 0,
-        "step4_valid_location": 0
+        "step3_not_in_mailbox": 1,
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX042510000015284846_webp_2026_01_06_1767732155813_529d58c8-db8c-4f90-9364-1439a0fc53aa.webp.webp",
@@ -6426,6 +6426,27 @@
     "overall_pass": 0
   },
   {
+    "image_name": "general_SWX088190000014327959_webp_2026_01_02_1767371329176_bcdbfe88-ce90-4dd3-85bc-f113bc6537d4_副本.webp.webp",
+    "image_relpath": "image/general_SWX088190000014327959_webp_2026_01_02_1767371329176_bcdbfe88-ce90-4dd3-85bc-f113bc6537d4_副本.webp.webp",
+    "label_relpath": "label/general_SWX088190000014327959_webp_2026_01_02_1767371329176_bcdbfe88-ce90-4dd3-85bc-f113bc6537d4_副本.webp.txt",
+    "label": {
+      "raw": "",
+      "values": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "by_key": {
+        "step1_valid_pod": null,
+        "step2_has_package": null,
+        "step3_not_in_mailbox": null,
+        "step4_valid_location": null
+      }
+    },
+    "overall_pass": 0
+  },
+  {
     "image_name": "general_SWX088190000014327959_webp_2026_01_02_1767371330158_6507ed7c-043d-4b7d-8078-2454d99811fb.webp.webp",
     "image_relpath": "image/general_SWX088190000014327959_webp_2026_01_02_1767371330158_6507ed7c-043d-4b7d-8078-2454d99811fb.webp.webp",
     "label_relpath": "label/general_SWX088190000014327959_webp_2026_01_02_1767371330158_6507ed7c-043d-4b7d-8078-2454d99811fb.webp.txt",
@@ -6997,15 +7018,15 @@
     "image_relpath": "image/general_SWX113860000014812852_webp_2026_01_05_1767585812380_1d649411-642d-49b7-9fc2-b574b33165ec.webp.webp",
     "label_relpath": "label/general_SWX113860000014812852_webp_2026_01_05_1767585812380_1d649411-642d-49b7-9fc2-b574b33165ec.webp.txt",
     "label": {
-      "raw": "0,0,1,0,0",
+      "raw": "1,0,1,0,0",
       "values": [
-        0,
+        1,
         0,
         1,
         0
       ],
       "by_key": {
-        "step1_valid_pod": 0,
+        "step1_valid_pod": 1,
         "step2_has_package": 0,
         "step3_not_in_mailbox": 1,
         "step4_valid_location": 0
@@ -8341,17 +8362,17 @@
     "image_relpath": "image/general_SWX206960000020427034_webp_2026_01_28_1769624585396_b9492860-3c4d-4c0f-a8b9-fcbebdab5d7e.webp.webp",
     "label_relpath": "label/general_SWX206960000020427034_webp_2026_01_28_1769624585396_b9492860-3c4d-4c0f-a8b9-fcbebdab5d7e.webp.txt",
     "label": {
-      "raw": "1,0,0,0,0",
+      "raw": "1,0,1,0,0",
       "values": [
         1,
         0,
-        0,
+        1,
         0
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 0,
-        "step3_not_in_mailbox": 0,
+        "step3_not_in_mailbox": 1,
         "step4_valid_location": 0
       }
     },
@@ -9034,21 +9055,21 @@
     "image_relpath": "image/general_SWX264730000021656913_webp_2026_01_29_1769707327675_c5fc5aa5-e1a3-417a-9511-d3e0d4d67750.webp.webp",
     "label_relpath": "label/general_SWX264730000021656913_webp_2026_01_29_1769707327675_c5fc5aa5-e1a3-417a-9511-d3e0d4d67750.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX264730000021656913_webp_2026_01_29_1769707327690_22fc8780-1456-47c0-8d10-c6c893cc83d1.webp.webp",
@@ -9748,21 +9769,21 @@
     "image_relpath": "image/general_SWX316070000013117486_webp_2026_01_09_1768001461641_70e25f24-542d-41b1-b5d5-db3afce775f5.webp.webp",
     "label_relpath": "label/general_SWX316070000013117486_webp_2026_01_09_1768001461641_70e25f24-542d-41b1-b5d5-db3afce775f5.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX317220000017190425_webp_2026_01_12_1768259461692_7685d482-9c38-4253-9dc6-61da1871c06a.webp.webp",
@@ -10441,21 +10462,21 @@
     "image_relpath": "image/general_SWX361630000019335589_webp_2026_01_22_1769046054461_16e897ee-576d-4df6-983c-1712dadf2235.webp.webp",
     "label_relpath": "label/general_SWX361630000019335589_webp_2026_01_22_1769046054461_16e897ee-576d-4df6-983c-1712dadf2235.webp.txt",
     "label": {
-      "raw": "1,0,1,1,1",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
+        1,
         1,
         1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
         "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX361710000016827064_webp_2026_01_11_1768148503426_1896a239-6ed1-4658-be3e-392cc1f36fe9.webp.webp",
@@ -10756,21 +10777,21 @@
     "image_relpath": "image/general_SWX375600000018545702_webp_2026_01_18_1768767123589_76ec6918-53c1-41e7-9fb9-77f4918d933f.webp.webp",
     "label_relpath": "label/general_SWX375600000018545702_webp_2026_01_18_1768767123589_76ec6918-53c1-41e7-9fb9-77f4918d933f.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX376980000018689190_webp_2026_01_20_1768950800010_9e68f3e9-51d0-439d-9261-42c9f582af51.webp.webp",
@@ -10924,21 +10945,21 @@
     "image_relpath": "image/general_SWX378700000018617376_webp_2026_01_20_1768943540588_41c49bf5-b1a3-4e75-ae88-83ff8bcea7f0.webp.webp",
     "label_relpath": "label/general_SWX378700000018617376_webp_2026_01_20_1768943540588_41c49bf5-b1a3-4e75-ae88-83ff8bcea7f0.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX378700000018617376_webp_2026_01_20_1768943541144_1f34ed86-d8b4-452d-ba14-799879285ad9.webp.webp",
@@ -12982,42 +13003,42 @@
     "image_relpath": "image/general_SWX533110000015227340_webp_2026_01_02_1767379562928_2edc646b-0d13-461a-b09d-9d8d832a1ea7.webp.webp",
     "label_relpath": "label/general_SWX533110000015227340_webp_2026_01_02_1767379562928_2edc646b-0d13-461a-b09d-9d8d832a1ea7.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX533110000015227340_webp_2026_01_02_1767379563697_42dca2cf-e8af-4d5e-b1b3-159c1ac85b73.webp.webp",
     "image_relpath": "image/general_SWX533110000015227340_webp_2026_01_02_1767379563697_42dca2cf-e8af-4d5e-b1b3-159c1ac85b73.webp.webp",
     "label_relpath": "label/general_SWX533110000015227340_webp_2026_01_02_1767379563697_42dca2cf-e8af-4d5e-b1b3-159c1ac85b73.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX533880000020172803_webp_2026_01_24_1769260169463_5a56175a-065f-4cc9-a912-c0881d39212f.webp.webp",
@@ -13129,21 +13150,21 @@
     "image_relpath": "image/general_SWX535320000018738454_webp_2026_01_22_1769101865853_1080e7b1-e62d-4bda-9d5e-63836a26f1f9.webp.webp",
     "label_relpath": "label/general_SWX535320000018738454_webp_2026_01_22_1769101865853_1080e7b1-e62d-4bda-9d5e-63836a26f1f9.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX535380000020043786_webp_2026_01_22_1769101173659_61d126de-9604-436c-a101-ebbf853361fd.webp.webp",
@@ -13654,21 +13675,21 @@
     "image_relpath": "image/general_SWX568720000018861711_webp_2026_01_19_1768845852339_baaa3185-bcff-4c58-8f18-a30ba9ec180c.webp.webp",
     "label_relpath": "label/general_SWX568720000018861711_webp_2026_01_19_1768845852339_baaa3185-bcff-4c58-8f18-a30ba9ec180c.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX568720000018861711_webp_2026_01_19_1768845853989_2f1147bf-8e45-4989-869e-1cb4a15862d7.webp.webp",
@@ -14179,7 +14200,7 @@
     "image_relpath": "image/general_SWX588430000016188657_webp_2026_01_08_1767883439072_dba21a58-a98c-47fd-9bed-a35513cc8c11.webp.webp",
     "label_relpath": "label/general_SWX588430000016188657_webp_2026_01_08_1767883439072_dba21a58-a98c-47fd-9bed-a35513cc8c11.webp.txt",
     "label": {
-      "raw": "1,1,1,1,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
@@ -14536,42 +14557,42 @@
     "image_relpath": "image/general_SWX611160000016325591_webp_2026_01_11_1768165833699_d660d464-6d44-4a37-b141-51bd9074f6bc.webp.webp",
     "label_relpath": "label/general_SWX611160000016325591_webp_2026_01_11_1768165833699_d660d464-6d44-4a37-b141-51bd9074f6bc.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX611160000016325591_webp_2026_01_11_1768165834337_b5cc3c83-b5cc-4184-a966-50cc61b5d73b.webp.webp",
     "image_relpath": "image/general_SWX611160000016325591_webp_2026_01_11_1768165834337_b5cc3c83-b5cc-4184-a966-50cc61b5d73b.webp.webp",
     "label_relpath": "label/general_SWX611160000016325591_webp_2026_01_11_1768165834337_b5cc3c83-b5cc-4184-a966-50cc61b5d73b.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX616130000017873940_webp_2026_01_23_1769203138174_67de1ac8-913d-4d32-90fe-b08af2cc6f41.webp.webp",
@@ -14599,42 +14620,42 @@
     "image_relpath": "image/general_SWX616130000017873940_webp_2026_01_23_1769203139024_56b2b9b4-8196-4bcd-9239-00602992d136.webp.webp",
     "label_relpath": "label/general_SWX616130000017873940_webp_2026_01_23_1769203139024_56b2b9b4-8196-4bcd-9239-00602992d136.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX616130000017873940_webp_2026_01_23_1769203139780_377d59be-cfe3-43d5-a1ec-7edf223dc97e.webp.webp",
     "image_relpath": "image/general_SWX616130000017873940_webp_2026_01_23_1769203139780_377d59be-cfe3-43d5-a1ec-7edf223dc97e.webp.webp",
     "label_relpath": "label/general_SWX616130000017873940_webp_2026_01_23_1769203139780_377d59be-cfe3-43d5-a1ec-7edf223dc97e.webp.txt",
     "label": {
-      "raw": "1,0,1,1,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
+        1,
         1,
         1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
         "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX621070000020163524_webp_2026_01_25_1769376547297_4c13bd60-20ce-4ebf-b7c6-48ff16542571.webp.webp",
@@ -14767,21 +14788,21 @@
     "image_relpath": "image/general_SWX622140000014091828_webp_2026_01_06_1767728096859_26afe7fb-8397-453d-a4ca-035ebaf256f6.webp.webp",
     "label_relpath": "label/general_SWX622140000014091828_webp_2026_01_06_1767728096859_26afe7fb-8397-453d-a4ca-035ebaf256f6.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX623710000017681451_webp_2026_01_16_1768577964815_84346ba8-cea4-4a41-ae02-f66728e18fd7.webp.webp",
@@ -15964,21 +15985,21 @@
     "image_relpath": "image/general_SWX700770000018729589_webp_2026_01_21_1769018046404_f9325807-573e-4145-a364-8fc2b0951d14.webp.webp",
     "label_relpath": "label/general_SWX700770000018729589_webp_2026_01_21_1769018046404_f9325807-573e-4145-a364-8fc2b0951d14.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX700770000018729589_webp_2026_01_21_1769018048012_06e8338e-8005-4f35-ae87-fc71eab5eb22.webp.webp",
@@ -16279,21 +16300,21 @@
     "image_relpath": "image/general_SWX720480000016044081_webp_2026_01_10_1768060344873_4fbeb468-49fd-4435-b3c1-61b4ed8c6285.webp.webp",
     "label_relpath": "label/general_SWX720480000016044081_webp_2026_01_10_1768060344873_4fbeb468-49fd-4435-b3c1-61b4ed8c6285.webp.txt",
     "label": {
-      "raw": "1,1,0,1,1",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
-        0,
+        1,
         1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
-        "step3_not_in_mailbox": 0,
+        "step3_not_in_mailbox": 1,
         "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX720480000016044081_webp_2026_01_10_1768060346018_8f5a1067-1e42-4215-b4ee-f26ac4e8f15e.webp.webp",
@@ -17875,21 +17896,21 @@
     "image_relpath": "image/general_SWX822520000018017979_webp_2026_01_14_1768435114928_54d94b5c-8c00-4845-801c-5e0291d1783b.webp.webp",
     "label_relpath": "label/general_SWX822520000018017979_webp_2026_01_14_1768435114928_54d94b5c-8c00-4845-801c-5e0291d1783b.webp.txt",
     "label": {
-      "raw": "1,0,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
-        0,
         1,
-        0
+        1,
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
-        "step2_has_package": 0,
+        "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX825750000018160306_webp_2026_01_14_1768409288323_5c4b30a0-07c2-4821-80e8-f5e4f5849cc4.webp.webp",
@@ -18568,21 +18589,21 @@
     "image_relpath": "image/general_SWX858140000015440811_webp_2026_01_05_1767646754429_94bbe051-e7c7-4d2c-ad67-100f4b471c5a.webp.webp",
     "label_relpath": "label/general_SWX858140000015440811_webp_2026_01_05_1767646754429_94bbe051-e7c7-4d2c-ad67-100f4b471c5a.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX867220000015124848_webp_2026_01_03_1767460210192_6ed0c5be-23cb-4de9-a084-6bc75ce66506.webp.webp",
@@ -19639,17 +19660,17 @@
     "image_relpath": "image/general_SWX922870000020295612_webp_2026_01_27_1769529724272_7b766ef5-5f62-44bd-b3b2-6eb1ee00aa5e.webp.webp",
     "label_relpath": "label/general_SWX922870000020295612_webp_2026_01_27_1769529724272_7b766ef5-5f62-44bd-b3b2-6eb1ee00aa5e.webp.txt",
     "label": {
-      "raw": "1,1,0,0,0",
+      "raw": "1,1,1,0,0",
       "values": [
         1,
         1,
-        0,
+        1,
         0
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
-        "step3_not_in_mailbox": 0,
+        "step3_not_in_mailbox": 1,
         "step4_valid_location": 0
       }
     },
@@ -20164,21 +20185,21 @@
     "image_relpath": "image/general_SWX957820000017585269_webp_2026_01_16_1768583197439_747b066f-28a4-4459-9208-95f4cc4f44a9.webp.webp",
     "label_relpath": "label/general_SWX957820000017585269_webp_2026_01_16_1768583197439_747b066f-28a4-4459-9208-95f4cc4f44a9.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX957820000017585269_webp_2026_01_16_1768583200741_5dcc5c38-7f1d-45d8-9657-84a22fd8a85f.webp.webp",
@@ -20311,15 +20332,15 @@
     "image_relpath": "image/general_SWX963070000015855714_webp_2026_01_05_1767585924823_e2b658f3-851c-432a-9a86-c77ca870ead6.webp.webp",
     "label_relpath": "label/general_SWX963070000015855714_webp_2026_01_05_1767585924823_e2b658f3-851c-432a-9a86-c77ca870ead6.webp.txt",
     "label": {
-      "raw": "0,0,1,0,0",
+      "raw": "1,0,1,0,0",
       "values": [
-        0,
+        1,
         0,
         1,
         0
       ],
       "by_key": {
-        "step1_valid_pod": 0,
+        "step1_valid_pod": 1,
         "step2_has_package": 0,
         "step3_not_in_mailbox": 1,
         "step4_valid_location": 0
@@ -20521,21 +20542,21 @@
     "image_relpath": "image/general_SWX970840000016273970_webp_2026_01_09_1767989976125_722f57b7-210c-4a90-9e9e-a37e202d53a2.webp.webp",
     "label_relpath": "label/general_SWX970840000016273970_webp_2026_01_09_1767989976125_722f57b7-210c-4a90-9e9e-a37e202d53a2.webp.txt",
     "label": {
-      "raw": "1,1,1,0,0",
+      "raw": "1,1,1,1,1",
       "values": [
         1,
         1,
         1,
-        0
+        1
       ],
       "by_key": {
         "step1_valid_pod": 1,
         "step2_has_package": 1,
         "step3_not_in_mailbox": 1,
-        "step4_valid_location": 0
+        "step4_valid_location": 1
       }
     },
-    "overall_pass": 0
+    "overall_pass": 1
   },
   {
     "image_name": "general_SWX970840000016273970_webp_2026_01_09_1767989976146_41725dca-e6ac-4fbc-9723-189a32131dd8.webp.webp",
