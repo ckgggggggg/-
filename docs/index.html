@@ -38,6 +38,26 @@
       cursor:pointer;
     }
 
+    .search{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .search input{
+      width: 260px;
+      max-width: 52vw;
+      background: rgba(15,23,42,.85);
+      border:1px solid var(--border);
+      color:var(--text);
+      border-radius: 12px;
+      padding:8px 10px;
+      font-size:12px;
+      outline:none;
+    }
+    .search input:focus{
+      border-color: rgba(148,163,184,.45);
+    }
+
     .wrap{
       max-width: 1300px;
       margin: 0 auto;
@@ -171,11 +191,6 @@
       text-overflow: ellipsis;
       max-width: 260px;
     }
-    .imgTop .stepsHint{
-      font-size:11px;
-      color:var(--muted);
-      white-space:nowrap;
-    }
 
     .imgBox{
       position:relative;
@@ -213,6 +228,12 @@
     .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     .line{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
     .tag{ color:var(--muted); }
+    .hint{
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+      opacity: .95;
+    }
 
     .empty{ padding:18px 14px; color:var(--muted); font-size:13px; }
   </style>
@@ -224,6 +245,10 @@
     <span>左侧订单列表（↑/↓切换） · 右侧显示全部图片与 Pred/GT（1,1,1,1,1）</span>
   </div>
   <div class="ctl">
+    <div class="search">
+      <input id="searchInput" class="mono" placeholder="输入订单号关键词…" />
+      <button id="searchBtn">Search</button>
+    </div>
     <button id="reloadBtn">Reload data_orders.json</button>
   </div>
 </header>
@@ -382,7 +407,6 @@
               <div class="idx mono">#${i+1}</div>
               <div class="order mono" title="${it.image_name}">${it.image_name}</div>
             </div>
-            <div class="stepsHint mono">${STEP_HINT}</div>
           </div>
 
           <div class="imgBox">
@@ -403,6 +427,7 @@
               <span class="tag">GT</span>
               <span class="mono">${gtVec}</span>
             </div>
+            <div class="hint mono">${STEP_HINT}</div>
           </div>
         </div>
       `;
@@ -425,12 +450,39 @@
     });
   }
 
+  function normalize(s){
+    return (s || "").trim().toLowerCase();
+  }
+
+  function searchAndActivate(q){
+    const key = normalize(q);
+    if (!key){
+      alert("请输入订单号关键词");
+      return;
+    }
+    const orders = DATA?.orders || [];
+    const hit = orders.findIndex(o => normalize(o.order_id).includes(key));
+    if (hit === -1){
+      alert("未找到匹配订单");
+      return;
+    }
+    setActive(hit);
+  }
+
   async function boot(){
     await loadData();
     bindKeyboard();
     renderOrderList();
     const first = DATA.orders?.[0];
     if (first) renderOrderDetail(first);
+
+    // 搜索按钮 / 回车
+    $("#searchBtn").addEventListener("click", () => {
+      searchAndActivate($("#searchInput").value);
+    });
+    $("#searchInput").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") searchAndActivate(e.target.value);
+    });
 
     $("#reloadBtn").addEventListener("click", async () => {
       await loadData();
