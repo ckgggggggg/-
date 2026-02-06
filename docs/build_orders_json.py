@@ -4,7 +4,7 @@ from pathlib import Path
 from collections import defaultdict
 
 # ================== 你需要改的路径 ==================
-PRED_JSONL = Path("/Users/chenkaige/Desktop/new-podv1/datasets/results_qwen_no_post/results.jsonl")          # 你的预测文件（jsonl：每行一个json）
+PRED_JSONL = Path("/Users/chenkaige/Desktop/new-podv1/datasets/qwen3-vl-8b-instruct/results.jsonl")          # 你的预测文件（jsonl：每行一个json）
 LABELS_DIR = Path("/Users/chenkaige/Desktop/new-podv1/dataset/docs/labels")                # labels/*.txt
 IMAGES_DIR = Path("/Users/chenkaige/Desktop/new-podv1/dataset/docs/images")                # 图片目录（网页相对路径基准）
 OUT_JSON   = Path("/Users/chenkaige/Desktop/new-podv1/dataset/docs/data_orders.json")      # 输出给网页用

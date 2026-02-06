@@ -246,7 +246,7 @@
     },
     {
       "order_id": "general_SWX022800000017960234",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -254,10 +254,10 @@
           "image_src": "./images/general_SWX022800000017960234_jpg_2026_01_26_1769462720786_f5a25c63-770f-43d3-af3d-1f28b16889e1.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -552,10 +552,10 @@
           "image_src": "./images/general_SWX025510000015096723_webp_2026_01_05_1767653209716_b487eecc-a3d0-48c2-aeb1-424cddc7b56b.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -630,7 +630,7 @@
     },
     {
       "order_id": "general_SWX028230000018427807",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -675,9 +675,9 @@
           "pred": {
             "step1_valid_pod": 1,
             "step2_has_package": 1,
-            "step3_not_in_mailbox": 0,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step3_not_in_mailbox": 1,
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -752,7 +752,7 @@
     },
     {
       "order_id": "general_SWX042510000015284846",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -778,10 +778,10 @@
           "image_src": "./images/general_SWX042510000015284846_webp_2026_01_06_1767732157250_643ade15-ccda-4aec-929a-992c5e72a9e6.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -900,7 +900,7 @@
           "image_src": "./images/general_SWX044290000016644927_webp_2026_01_09_1767930819291_6b6b7c43-8c36-45b4-b1f8-eff0a9e4352c.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -999,7 +999,7 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 0,
-            "step4_valid_location": 0,
+            "step4_valid_location": 1,
             "overall_pass": 0
           },
           "gt": {
@@ -1887,7 +1887,7 @@
           "image_src": "./images/general_SWX089400000014405574_webp_2026_01_02_1767378116390_75cf6f29-9b01-4e72-b315-3cf5801c8c33.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -2001,7 +2001,7 @@
     },
     {
       "order_id": "general_SWX092980000019518203",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -2045,10 +2045,10 @@
           "image_src": "./images/general_SWX092980000019518203_jpg_2026_01_23_1769191135368_d59c3c56-5379-4c97-8f64-cf8b13f3fee3.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -2263,7 +2263,7 @@
     },
     {
       "order_id": "general_SWX102560000003523666",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 0,
       "images": [
         {
@@ -2271,10 +2271,10 @@
           "image_src": "./images/general_SWX102560000003523666_webp_2026_01_05_1767575733133_d49ae828-b03b-4e96-bb6a-be1733c12687.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -2307,10 +2307,10 @@
           "image_src": "./images/general_SWX102560000003523666_webp_2026_01_05_1767575734039_66fab4e4-b6dc-4417-9e31-bc2758bab8a8.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -2349,7 +2349,7 @@
           "image_name": "general_SWX113860000014812852_webp_2026_01_05_1767585809950_6a0a2190-2f72-424d-a50c-ca3819ad221e.webp.webp",
           "image_src": "./images/general_SWX113860000014812852_webp_2026_01_05_1767585809950_6a0a2190-2f72-424d-a50c-ca3819ad221e.webp.webp",
           "pred": {
-            "step1_valid_pod": 1,
+            "step1_valid_pod": 0,
             "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
@@ -2439,7 +2439,7 @@
     },
     {
       "order_id": "general_SWX117950000019420550",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
@@ -2449,8 +2449,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -2483,7 +2483,7 @@
           "image_src": "./images/general_SWX117950000019420550_jpg_2026_01_24_1769284518187_37d39fbb-2e73-48e2-9831-b55cdff4f179.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -2988,7 +2988,7 @@
     },
     {
       "order_id": "general_SWX139510000020389099",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -3032,10 +3032,10 @@
           "image_src": "./images/general_SWX139510000020389099_jpg_2026_01_25_1769375591690_4bfb26f5-c22c-4d37-8272-4703efbb2131.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -3093,7 +3093,7 @@
           "image_src": "./images/general_SWX140300000021264075_jpg_2026_01_30_1769815638030_c6d35453-612e-42c1-9277-78d6badd97aa.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -3258,7 +3258,7 @@
           "image_src": "./images/general_SWX160800000016093798_webp_2026_01_13_1768345788818_5cee233b-f7c4-42c5-b29e-668a081778da.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -3642,7 +3642,7 @@
           "image_src": "./images/general_SWX181600000020402937_jpg_2026_01_29_1769701457163_2cd89ded-a024-40e4-aa5a-72ef96a3ce38.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -3703,7 +3703,7 @@
           "image_src": "./images/general_SWX182450000014298633_webp_2025_12_31_1767211724362_475804f8-8edc-4e4e-908c-a59d5898cc30.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -3843,7 +3843,7 @@
           "image_src": "./images/general_SWX195240000017362483_webp_2026_01_16_1768598821702_f5a4518a-29cb-4b10-8c8f-5d14d5bb86db.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -3861,10 +3861,10 @@
           "image_src": "./images/general_SWX195240000017362483_webp_2026_01_16_1768598822561_b2f6aaf7-1255-4345-9426-a7240a413ec6.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -4044,7 +4044,7 @@
           "image_src": "./images/general_SWX198280000016894977_webp_2026_01_24_1769260809543_8eca5aee-9082-48f4-ac50-bf1f0189dbe6.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -4342,10 +4342,10 @@
           "image_src": "./images/general_SWX199330000017464847_webp_2026_01_15_1768484254373_3235bde6-529d-4cae-be91-50ee6219c33d.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -4807,8 +4807,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -4850,8 +4850,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -4868,8 +4868,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -4883,7 +4883,7 @@
     },
     {
       "order_id": "general_SWX234370000017433609",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -4927,10 +4927,10 @@
           "image_src": "./images/general_SWX234370000017433609_jpg_2026_01_18_1768702942424_619d5f7b-1736-44c7-957b-97ba5d08118c.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -5074,7 +5074,7 @@
           "image_src": "./images/general_SWX245690000017206231_webp_2026_01_14_1768415643126_c12cd54b-2bc9-4233-9d2a-b01f9d132503.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -5860,7 +5860,7 @@
           "image_src": "./images/general_SWX309770000014270272_webp_2026_01_02_1767375339258_e7a8f6ea-22f3-49d7-895d-cf5dfb2d12eb.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -6079,7 +6079,7 @@
           "image_src": "./images/general_SWX316070000013117486_webp_2026_01_09_1768001460302_bc908a79-12ef-461f-a636-bee4d3b7f6ea.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -6341,10 +6341,10 @@
           "image_src": "./images/general_SWX332620000014015248_webp_2026_01_02_1767362430446_0395ef4b-c970-46dd-be9a-4fa03f196e14.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -7284,7 +7284,7 @@
     },
     {
       "order_id": "general_SWX375600000018545702",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -7310,10 +7310,10 @@
           "image_src": "./images/general_SWX375600000018545702_webp_2026_01_18_1768767123055_6d1892b8-a00b-41cd-a4e0-f8b83aa7bc3e.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -7554,7 +7554,7 @@
           "image_src": "./images/general_SWX379260000016507595_webp_2026_01_12_1768255142857_14d18341-770c-4260-a2b6-bee2fe53a997.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -7973,7 +7973,7 @@
     },
     {
       "order_id": "general_SWX433280000016760883",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
@@ -8055,8 +8055,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -8498,7 +8498,7 @@
           "image_src": "./images/general_SWX447280000012579471_webp_2026_01_01_1767230931422_7c3e026d-1dc9-489d-b155-e6f63b7c39f7.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -9218,8 +9218,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -9575,10 +9575,10 @@
           "image_src": "./images/general_SWX508900000021787555_jpg_2026_01_30_1769808308358_ea46288e-1521-4546-b460-1da156c3a269.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -9653,8 +9653,8 @@
           "image_name": "general_SWX519230000016585877_webp_2026_01_11_1768162001921_e7d7f406-cec3-4dce-b33d-f2f0f1270b08.webp.webp",
           "image_src": "./images/general_SWX519230000016585877_webp_2026_01_11_1768162001921_e7d7f406-cec3-4dce-b33d-f2f0f1270b08.webp.webp",
           "pred": {
-            "step1_valid_pod": 0,
-            "step2_has_package": 0,
+            "step1_valid_pod": 1,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -9715,7 +9715,7 @@
           "image_src": "./images/general_SWX520760000017671056_webp_2026_01_15_1768511040886_259f096f-5503-4806-a377-cbbd467d0a4a.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -9829,7 +9829,7 @@
     },
     {
       "order_id": "general_SWX527080000002504347",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 0,
       "images": [
         {
@@ -9839,8 +9839,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -9875,8 +9875,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -10241,8 +10241,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -10264,7 +10264,7 @@
           "image_src": "./images/general_SWX540390000013832024_webp_2025_12_31_1767196982413_41636ff1-04dd-41bb-92d0-0c4398c22a4e.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -10799,10 +10799,10 @@
           "image_src": "./images/general_SWX569370000022012240_jpg_2026_01_30_1769747936083_857c7ccd-5083-4d76-a32b-a1932a60f35a.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -11142,7 +11142,7 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 0,
-            "step4_valid_location": 0,
+            "step4_valid_location": 1,
             "overall_pass": 0
           },
           "gt": {
@@ -11684,8 +11684,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -11702,8 +11702,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -11997,7 +11997,7 @@
     },
     {
       "order_id": "general_SWX622140000014091828",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -12041,10 +12041,10 @@
           "image_src": "./images/general_SWX622140000014091828_webp_2026_01_06_1767728096859_26afe7fb-8397-453d-a4ca-035ebaf256f6.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -12119,7 +12119,7 @@
     },
     {
       "order_id": "general_SWX624060000021610049",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
@@ -12129,8 +12129,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -12267,7 +12267,7 @@
           "image_src": "./images/general_SWX650330000022105510_jpg_2026_01_30_1769801244294_3d69d8df-102a-4ae7-872d-bc9913d8c7e8.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -12522,10 +12522,10 @@
           "image_src": "./images/general_SWX659020000014146199_webp_2026_01_06_1767662414139_f39f1ae9-dd3c-439b-9e2e-3c39ff092bc5.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -12811,8 +12811,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -12862,7 +12862,7 @@
     },
     {
       "order_id": "general_SWX672190000014281871",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
@@ -12890,8 +12890,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -13254,7 +13254,7 @@
           "image_src": "./images/general_SWX683810000011608967_webp_2026_01_09_1767922436289_f8733a13-db18-4e71-9582-24ea8622f6bf.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 1,
+            "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -13490,7 +13490,7 @@
     },
     {
       "order_id": "general_SWX700770000018729589",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
@@ -13518,8 +13518,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -13945,8 +13945,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -13979,10 +13979,10 @@
           "image_src": "./images/general_SWX720480000016044081_webp_2026_01_10_1768060346018_8f5a1067-1e42-4215-b4ee-f26ac4e8f15e.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -14388,7 +14388,7 @@
           "image_src": "./images/general_SWX737520000018733132_webp_2026_01_21_1768994130802_d8c95a27-0cdb-4ac9-8f64-f211d664fcbd.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -14566,8 +14566,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -16049,7 +16049,7 @@
     },
     {
       "order_id": "general_SWX822520000018017979",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -16059,8 +16059,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -16232,7 +16232,7 @@
     },
     {
       "order_id": "general_SWX836080000016593625",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -16276,10 +16276,10 @@
           "image_src": "./images/general_SWX836080000016593625_webp_2026_01_16_1768601296929_83089beb-b959-49bd-a4c7-8acdba4873f0.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -16364,8 +16364,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -16382,8 +16382,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -16502,10 +16502,10 @@
           "image_src": "./images/general_SWX841130000020319647_jpg_2026_01_27_1769537200764_59610e31-3d52-4359-b725-96934fd1f3eb.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -17115,7 +17115,7 @@
     },
     {
       "order_id": "general_SWX879970000015962341",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -17124,7 +17124,7 @@
           "pred": {
             "step1_valid_pod": 1,
             "step2_has_package": 1,
-            "step3_not_in_mailbox": 0,
+            "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
           },
@@ -17438,7 +17438,7 @@
     },
     {
       "order_id": "general_SWX898930000019276390",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -17483,9 +17483,9 @@
           "pred": {
             "step1_valid_pod": 1,
             "step2_has_package": 1,
-            "step3_not_in_mailbox": 0,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step3_not_in_mailbox": 1,
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -17527,8 +17527,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 1,
-            "overall_pass": 1
+            "step4_valid_location": 0,
+            "overall_pass": 0
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -17866,7 +17866,7 @@
           "image_src": "./images/general_SWX913900000018416979_webp_2026_01_17_1768608310277_c7542c43-820f-4719-ab37-d5285c71ffc4.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -18439,8 +18439,8 @@
             "step1_valid_pod": 1,
             "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -18541,7 +18541,7 @@
           "image_src": "./images/general_SWX937400000016638433_webp_2026_01_14_1768424692137_d0806235-f4ac-43c4-98fd-57d6194957e7.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -18760,10 +18760,10 @@
           "image_src": "./images/general_SWX953270000018742370_webp_2026_01_18_1768749426383_4582941e-5351-4009-8c50-46e4546bb5c1.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -18874,7 +18874,7 @@
     },
     {
       "order_id": "general_SWX957820000017585269",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -18919,9 +18919,9 @@
           "pred": {
             "step1_valid_pod": 1,
             "step2_has_package": 1,
-            "step3_not_in_mailbox": 0,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step3_not_in_mailbox": 1,
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -18978,7 +18978,7 @@
           "image_name": "general_SWX963070000015855714_webp_2026_01_05_1767585923563_7e1a4580-f49a-467e-b67f-f97adfbe8d49.webp.webp",
           "image_src": "./images/general_SWX963070000015855714_webp_2026_01_05_1767585923563_7e1a4580-f49a-467e-b67f-f97adfbe8d49.webp.webp",
           "pred": {
-            "step1_valid_pod": 1,
+            "step1_valid_pod": 0,
             "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
@@ -19223,7 +19223,7 @@
           "image_src": "./images/general_SWX970840000016273970_webp_2026_01_09_1767989214583_6814ba4e-3f9e-4d8a-ada5-3a3ff1ea8652.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -19278,7 +19278,7 @@
           "pred": {
             "step1_valid_pod": 1,
             "step2_has_package": 1,
-            "step3_not_in_mailbox": 0,
+            "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
           },
@@ -19477,7 +19477,7 @@
           "image_name": "general_SWX985870000019433833_jpg_2026_01_28_1769641658062_7fc06ad0-009f-4028-be68-7257d26a0b1f.jpg.jpg",
           "image_src": "./images/general_SWX985870000019433833_jpg_2026_01_28_1769641658062_7fc06ad0-009f-4028-be68-7257d26a0b1f.jpg.jpg",
           "pred": {
-            "step1_valid_pod": 0,
+            "step1_valid_pod": 1,
             "step2_has_package": 0,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
@@ -19689,7 +19689,7 @@
     },
     {
       "order_id": "general_SWX990220000017799367",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -19733,10 +19733,10 @@
           "image_src": "./images/general_SWX990220000017799367_jpg_2026_01_16_1768590054002_ccd77aef-e7b5-40ab-b080-9b6eff3a3c92.jpg.jpg",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
@@ -19819,7 +19819,7 @@
           "image_src": "./images/general_SWX995010000018336649_webp_2026_01_18_1768768181883_814cb380-4635-4e68-b735-fe011c15eb2a.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
             "step4_valid_location": 0,
             "overall_pass": 0
@@ -19951,7 +19951,7 @@
     },
     {
       "order_id": "general_SWX997280000015017144",
-      "pred_order_pass": 0,
+      "pred_order_pass": 1,
       "gt_order_pass": 1,
       "images": [
         {
@@ -19995,10 +19995,10 @@
           "image_src": "./images/general_SWX997280000015017144_webp_2025_12_31_1767216945535_c60aa8db-0cea-4d00-a122-48ef493bee1d.webp.webp",
           "pred": {
             "step1_valid_pod": 1,
-            "step2_has_package": 0,
+            "step2_has_package": 1,
             "step3_not_in_mailbox": 1,
-            "step4_valid_location": 0,
-            "overall_pass": 0
+            "step4_valid_location": 1,
+            "overall_pass": 1
           },
           "gt": {
             "step1_valid_pod": 1,
