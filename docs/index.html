@@ -2,223 +2,323 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dataset Viewer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>订单图片 Viewer</title>
   <style>
-    :root { --bg:#0b0f17; --panel:#111827; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --border:#1f2937; }
+    :root{
+      --bg:#0b0f17; --panel:#111827; --card:#0f172a;
+      --text:#e5e7eb; --muted:#94a3b8; --border:#1f2937;
+      --ok:#22c55e; --bad:#ef4444; --warn:#f59e0b;
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
     *{ box-sizing:border-box; }
-    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-          background:var(--bg); color:var(--text); }
-    header{ padding:12px 16px; border-bottom:1px solid var(--border); background:rgba(17,24,39,.7); position:sticky; top:0; backdrop-filter: blur(8px); }
-    .row{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
-    input, select, button{
-      background:var(--panel); border:1px solid var(--border); color:var(--text);
-      padding:8px 10px; border-radius:10px; outline:none;
+    body{
+      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      background: var(--bg); color:var(--text);
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:14px 16px;
+      background: rgba(17,24,39,.85);
+      border-bottom:1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    .leftHead{ display:flex; flex-direction:column; gap:2px; }
+    .leftHead strong{ font-size:15px; }
+    .leftHead span{ font-size:12px; color:var(--muted); }
+
+    .ctl{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    select, button{
+      background: rgba(15,23,42,.85);
+      border:1px solid var(--border);
+      color:var(--text);
+      border-radius: 12px;
+      padding:8px 10px;
+      font-size:12px;
+      outline:none;
     }
     button{ cursor:pointer; }
-    .wrap{ display:grid; grid-template-columns: 520px 1fr; height: calc(100vh - 58px); }
-    .left{ border-right:1px solid var(--border); background:rgba(17,24,39,.35); overflow:auto; padding:12px; }
-    .right{ overflow:auto; padding:12px; }
-    .list{ display:flex; flex-direction:column; gap:8px; }
-    .item{
-      padding:10px; border:1px solid var(--border); border-radius:14px; background:rgba(15,23,42,.5);
-      display:flex; justify-content:space-between; gap:8px; cursor:pointer;
+
+    .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px;
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:14px;
     }
-    .item:hover{ border-color:#334155; }
-    .item.active{ border-color:#60a5fa; box-shadow:0 0 0 1px rgba(96,165,250,.35) inset; }
-    .name{ font-size:12px; color:var(--muted); word-break:break-all; }
-    .badge{ font-size:12px; padding:2px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
-    .badge.pass{ color:#86efac; border-color:rgba(134,239,172,.35); }
-    .badge.fail{ color:#fca5a5; border-color:rgba(252,165,165,.35); }
-    .card{ background:rgba(15,23,42,.6); border:1px solid var(--border); border-radius:16px; padding:12px; margin-bottom:12px; }
-    .hint{ color:var(--muted); font-size:12px; }
-    .grid{ display:grid; grid-template-columns: 1fr 100px; gap:8px 10px; align-items:center; }
-    .k{ color:var(--muted); font-size:12px; }
-    .v{ text-align:right; font-variant-numeric: tabular-nums; }
-    img{ max-width:100%; border-radius:16px; border:1px solid var(--border); background:#020617; }
-    code{ background:rgba(148,163,184,.15); padding:2px 6px; border-radius:8px; border:1px solid rgba(148,163,184,.18); }
-    @media (max-width: 900px){
-      .wrap{ grid-template-columns: 1fr; }
-      .left{ border-right:none; border-bottom:1px solid var(--border); height: 44vh; }
-      .right{ height: 56vh; }
+    @media (max-width: 980px){ .wrap{ grid-template-columns: 1fr; } }
+
+    .panel{
+      background: rgba(17,24,39,.85);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
     }
+    .panel .ph{
+      padding:12px 14px;
+      border-bottom:1px solid var(--border);
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:6px 10px; border-radius:999px;
+      border:1px solid var(--border);
+      background: rgba(15,23,42,.85);
+      font-size:12px; color:var(--muted);
+      white-space:nowrap;
+    }
+    .dot{ width:10px; height:10px; border-radius:999px; background:var(--warn); }
+    .dot.ok{ background:var(--ok); }
+    .dot.bad{ background:var(--bad); }
+
+    .meta{
+      padding:12px 14px 14px;
+      display:flex; flex-direction:column; gap:10px;
+    }
+    .row{
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      padding:10px 10px;
+      border:1px dashed rgba(148,163,184,.35);
+      border-radius: 12px;
+      background: rgba(15,23,42,.35);
+      font-size:12px;
+    }
+    .row .k{ color:var(--muted); }
+    .row .v{ display:flex; align-items:center; gap:8px; }
+
+    .main{
+      display:flex; flex-direction:column; gap:14px;
+    }
+
+    .imgs{
+      padding:12px;
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap:12px;
+    }
+    @media (max-width: 980px){ .imgs{ grid-template-columns: 1fr; } }
+
+    .imgbox{
+      border:1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(2,6,23,.6);
+      overflow:hidden;
+      position:relative;
+      min-height: 220px;
+    }
+    .imgbox img{
+      width:100%; height:100%;
+      display:block; object-fit:cover;
+    }
+    .cap{
+      position:absolute; left:10px; top:10px;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      background: rgba(15,23,42,.82);
+      border:1px solid rgba(148,163,184,.25);
+      backdrop-filter: blur(8px);
+    }
+    .cap small{ color:var(--muted); margin-left:8px; }
+
+    table{
+      width:100%;
+      border-collapse: collapse;
+      font-size:12px;
+    }
+    th, td{
+      border-top:1px solid var(--border);
+      padding:10px 12px;
+      text-align:left;
+      vertical-align:top;
+    }
+    th{ color:var(--muted); font-weight:600; background: rgba(15,23,42,.35); }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .muted{ color:var(--muted); }
+    .empty{ padding:18px 14px; color:var(--muted); font-size:13px; }
   </style>
 </head>
 <body>
 <header>
-  <div class="row">
-    <strong>Dataset Viewer</strong>
-    <span class="hint">左侧：条目与标注；右侧：图片预览</span>
-    <span style="flex:1;"></span>
-    <input id="q" placeholder="搜索文件名…" />
-    <select id="filter">
-      <option value="all">全部</option>
-      <option value="pass">overall_pass=1</option>
-      <option value="fail">overall_pass=0</option>
-    </select>
-    <button id="copyLink">复制当前条目链接</button>
+  <div class="leftHead">
+    <strong>订单图片 Viewer</strong>
+    <span>按订单前缀分组；展示全部图片 + Pred/GT 对照 + 订单级判定</span>
+  </div>
+  <div class="ctl">
+    <select id="orderSel"></select>
+    <button id="reloadBtn">Reload</button>
   </div>
 </header>
 
 <div class="wrap">
-  <aside class="left">
-    <div class="card">
-      <div style="display:flex; justify-content:space-between; gap:10px; align-items:flex-start;">
-        <div>
-          <div style="font-weight:600;">数据</div>
-          <div class="hint" id="stat">加载中…</div>
-        </div>
-        <div class="hint">快捷键：↑/↓ 切换</div>
+  <!-- 左侧：订单总体与规则 -->
+  <aside class="panel">
+    <div class="ph">
+      <div>
+        <div class="muted" style="font-size:12px;">订单ID</div>
+        <div id="oid" class="mono" style="margin-top:4px;font-size:13px;">-</div>
       </div>
+      <div class="pill" id="orderPill"><span class="dot"></span><span>订单：-</span></div>
     </div>
-    <div class="list" id="list"></div>
+    <div class="meta" id="orderMeta"></div>
   </aside>
 
-  <main class="right">
-    <div class="card" id="meta"></div>
-    <img id="img" alt="image preview" />
-    <div class="hint" style="margin-top:10px;">
-      分享定位：URL 后带 <code>#image3.png</code> 可直接打开对应条目。
-    </div>
+  <!-- 右侧：图片与明细 -->
+  <main class="main">
+    <section class="panel">
+      <div class="ph">
+        <div style="display:flex;align-items:baseline;gap:10px;">
+          <strong style="font-size:14px;">订单图片</strong>
+          <span class="muted">3~5 张（或更多）全部展示</span>
+        </div>
+        <div class="pill" id="countPill"><span class="dot"></span><span>images: -</span></div>
+      </div>
+      <div class="imgs" id="imgGrid"></div>
+    </section>
+
+    <section class="panel">
+      <div class="ph">
+        <strong style="font-size:14px;">Pred / GT 明细对照</strong>
+        <span class="muted">overall_pass：step1~4 全 1 才为 1</span>
+      </div>
+      <div id="tableWrap"></div>
+    </section>
   </main>
 </div>
 
 <script>
-  const STEP_KEYS = [
-    "step1_valid_pod",
-    "step2_has_package",
-    "step3_not_in_mailbox",
-    "step4_valid_location",
-  ];
+  const STEP_KEYS = ["step1_valid_pod","step2_has_package","step3_not_in_mailbox","step4_valid_location","overall_pass"];
+  const $ = s => document.querySelector(s);
 
-  const state = { all: [], filtered: [], idx: 0 };
-
-  function badge(pass){
-    const cls = pass ? "badge pass" : "badge fail";
-    return `<span class="${cls}">${pass ? "PASS" : "FAIL"}</span>`;
+  function dotClass(v){
+    if (v === 1) return "ok";
+    if (v === 0) return "bad";
+    return "";
+  }
+  function valText(v){
+    return (v === 0 || v === 1) ? String(v) : "-";
   }
 
-  function escapeHtml(s){
-    return String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  let DATA = null;
+
+  async function loadData(){
+    const res = await fetch("data_orders.json?_=" + Date.now());
+    DATA = await res.json();
   }
 
-  function renderList(){
-    const list = document.getElementById("list");
-    list.innerHTML = "";
-    state.filtered.forEach((item, i) => {
-      const div = document.createElement("div");
-      div.className = "item" + (i === state.idx ? " active" : "");
-      const pass = Number(item.overall_pass) === 1;
-      div.innerHTML = `
-        <div style="min-width:0;">
-          <div style="font-weight:600; font-size:13px;">${escapeHtml(item.image_name ?? ("item_"+i))}</div>
-          <div class="name">${escapeHtml(item.label?.raw ?? "")}</div>
-        </div>
-        ${badge(pass)}
-      `;
-      div.onclick = () => { state.idx = i; syncToUI(true); };
-      list.appendChild(div);
+  function fillOrderSelector(){
+    const sel = $("#orderSel");
+    sel.innerHTML = "";
+    (DATA.orders || []).forEach((o, idx) => {
+      const opt = document.createElement("option");
+      opt.value = String(idx);
+      opt.textContent = o.order_id;
+      sel.appendChild(opt);
     });
   }
 
-  function renderMeta(item){
-    const meta = document.getElementById("meta");
-    if (!item){
-      meta.innerHTML = `<div class="hint">无数据</div>`;
-      return;
-    }
-    const pass = Number(item.overall_pass) === 1;
+  function renderOrder(order){
+    $("#oid").textContent = order.order_id;
 
-    const byKey = item.label?.by_key || {};
-    const rows = STEP_KEYS.map(k => {
-      const v = byKey[k];
-      const show = (v === null || v === undefined || v === "") ? "N/A" : v;
-      return `<div class="k">${escapeHtml(k)}</div><div class="v">${escapeHtml(show)}</div>`;
+    // 订单级判定展示
+    const predOrder = order.pred_order_pass;
+    const gtOrder = order.gt_order_pass; // 可能为 null（GT缺失）
+    const pill = $("#orderPill");
+    const dot = pill.querySelector(".dot");
+    dot.className = "dot " + dotClass(predOrder);
+    pill.querySelector("span:last-child").textContent =
+      `订单 Pred=${valText(predOrder)} / GT=${gtOrder===null? "-" : valText(gtOrder)}`;
+
+    // 左侧 meta（规则解释 + 汇总）
+    const meta = $("#orderMeta");
+    meta.innerHTML = `
+      <div class="row">
+        <div class="k">订单合格规则</div>
+        <div class="v"><span class="muted">任意图片 overall_pass=1 → 订单=1</span></div>
+      </div>
+      <div class="row">
+        <div class="k">overall_pass（图片级）</div>
+        <div class="v"><span class="muted">step1~step4 全为 1 才为 1</span></div>
+      </div>
+      <div class="row">
+        <div class="k">图片数量</div>
+        <div class="v"><span class="mono">${order.images.length}</span></div>
+      </div>
+    `;
+
+    // 图片网格（你的手稿是 3 个框，这里自动适配 3~5 张甚至更多）
+    $("#countPill").querySelector("span:last-child").textContent = `images: ${order.images.length}`;
+    const grid = $("#imgGrid");
+    grid.innerHTML = order.images.map((it, i) => {
+      const p = it.pred?.overall_pass;
+      const g = it.gt?.overall_pass;
+      const tag = `#${i+1} <small>Pred=${valText(p)} / GT=${it.gt? valText(g): "-"}</small>`;
+      return `
+        <div class="imgbox">
+          <div class="cap">${tag}</div>
+          <img src="${it.image_src}" alt="${it.image_name}" loading="lazy" />
+        </div>
+      `;
     }).join("");
 
-    meta.innerHTML = `
-      <div style="display:flex; justify-content:space-between; gap:10px; align-items:flex-start; margin-bottom:10px;">
-        <div>
-          <div style="font-weight:700; font-size:16px;">${escapeHtml(item.image_name ?? "")}</div>
-          <div class="hint">标注文件：<code>${escapeHtml(item.label_relpath ?? "")}</code></div>
-          <div class="hint">原始行：<code>${escapeHtml(item.label?.raw ?? "")}</code></div>
-        </div>
-        ${badge(pass)}
-      </div>
-      <div class="grid">${rows}</div>
+    // 明细表
+    const rows = order.images.map((it, i) => {
+      const pred = it.pred || {};
+      const gt = it.gt || null;
+      const predStr = STEP_KEYS.map(k => `${k}=${valText(pred[k])}`).join(", ");
+      const gtStr = gt ? STEP_KEYS.map(k => `${k}=${valText(gt[k])}`).join(", ") : "-";
+      return `
+        <tr>
+          <td class="mono">#${i+1}</td>
+          <td class="mono" style="word-break:break-all;">${it.image_name}</td>
+          <td class="mono">${predStr}</td>
+          <td class="mono">${gtStr}</td>
+        </tr>
+      `;
+    }).join("");
+
+    $("#tableWrap").innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th style="width:60px;">序号</th>
+            <th>image_name</th>
+            <th style="width:360px;">Pred</th>
+            <th style="width:360px;">GT</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows || `<tr><td colspan="4" class="empty">无数据</td></tr>`}
+        </tbody>
+      </table>
     `;
   }
 
-  function syncToUI(pushHash){
-    if (state.idx < 0) state.idx = 0;
-    if (state.idx >= state.filtered.length) state.idx = state.filtered.length - 1;
+  async function boot(){
+    await loadData();
+    fillOrderSelector();
+    const sel = $("#orderSel");
+    const first = DATA.orders?.[0];
+    if (first) renderOrder(first);
 
-    renderList();
-    const item = state.filtered[state.idx];
-    renderMeta(item);
-
-    const img = document.getElementById("img");
-    img.src = item?.image_relpath || "";
-    img.onerror = () => { img.alt = "图片加载失败：请检查 image/ 目录与文件名是否匹配"; };
-
-    if (pushHash && item?.image_name){
-      location.hash = encodeURIComponent(item.image_name);
-    }
-  }
-
-  function applyFilter(){
-    const q = document.getElementById("q").value.trim().toLowerCase();
-    const f = document.getElementById("filter").value;
-
-    state.filtered = state.all.filter(item => {
-      const name = (item.image_name ?? "").toLowerCase();
-      if (q && !name.includes(q)) return false;
-      const pass = Number(item.overall_pass) === 1;
-      if (f === "pass" && !pass) return false;
-      if (f === "fail" && pass) return false;
-      return true;
+    sel.addEventListener("change", () => {
+      const idx = Number(sel.value);
+      renderOrder(DATA.orders[idx]);
     });
 
-    const h = decodeURIComponent((location.hash || "").replace(/^#/, ""));
-    if (h){
-      const newIdx = state.filtered.findIndex(x => (x.image_name ?? "") === h);
-      state.idx = newIdx >= 0 ? newIdx : 0;
-    } else {
-      state.idx = 0;
-    }
-
-    document.getElementById("stat").textContent = `总数 ${state.all.length}，当前 ${state.filtered.length}`;
-    syncToUI(false);
+    $("#reloadBtn").addEventListener("click", async () => {
+      await loadData();
+      fillOrderSelector();
+      const idx = Number($("#orderSel").value || 0);
+      renderOrder(DATA.orders[idx] || DATA.orders[0]);
+    });
   }
 
-  async function init(){
-    const resp = await fetch("data.json", { cache: "no-store" });
-    const data = await resp.json();
-    state.all = Array.isArray(data) ? data : [];
-
-    document.getElementById("q").addEventListener("input", applyFilter);
-    document.getElementById("filter").addEventListener("change", applyFilter);
-    window.addEventListener("hashchange", applyFilter);
-
-    document.getElementById("copyLink").addEventListener("click", async () => {
-      const item = state.filtered[state.idx];
-      const url = location.origin + location.pathname + (item?.image_name ? ("#" + encodeURIComponent(item.image_name)) : "");
-      try{ await navigator.clipboard.writeText(url); alert("已复制链接"); }
-      catch(e){ prompt("复制失败，请手动复制：", url); }
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowDown"){ state.idx = Math.min(state.idx + 1, state.filtered.length - 1); syncToUI(true); }
-      if (e.key === "ArrowUp"){ state.idx = Math.max(state.idx - 1, 0); syncToUI(true); }
-    });
-
-    applyFilter();
-  }
-
-  init().catch(err => {
-    console.error(err);
-    document.getElementById("stat").textContent = "加载失败：请检查 data.json 是否存在且为 JSON 数组";
-  });
+  boot();
 </script>
 </body>
 </html>
