@@ -89,7 +89,10 @@ def main():
 
             # 网页里用相对路径加载图片：images/xxx.jpg
             # 如果你 IMAGES_DIR 就是网页同目录下 images，则保持如下写法
-            rel_img_src = str((IMAGES_DIR / Path(image_path).name).as_posix())
+            # 网页里用相对路径加载图片：./images/xxx.jpg.jpg
+            fname = Path(image_path).name  # 只取文件名，避免 /Users/... 绝对路径
+            rel_img_src = f"./images/{fname}"
+
 
             groups[oid].append({
                 "image_name": image_name,
