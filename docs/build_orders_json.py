@@ -101,13 +101,38 @@ def main():
                 "gt": (None if gt_steps is None else {**gt_steps, "overall_pass": gt_overall}),
             })
 
+    # orders = []
+    # for oid, items in groups.items():
+    #     # 订单级：只要任意图片 overall_pass==1，则订单 pass=1
+    #     pred_order_pass = 1 if any(int(it["pred"]["overall_pass"]) == 1 for it in items) else 0
+    #     gt_order_pass = None
+    #     if all(it["gt"] is not None for it in items):
+    #         gt_order_pass = 1 if any(int(it["gt"]["overall_pass"]) == 1 for it in items) else 0
+
+    #     orders.append({
+    #         "order_id": oid,
+    #         "pred_order_pass": pred_order_pass,
+    #         "gt_order_pass": gt_order_pass,
+    #         "images": items,
+    #     })
     orders = []
     for oid, items in groups.items():
-        # 订单级：只要任意图片 overall_pass==1，则订单 pass=1
-        pred_order_pass = 1 if any(int(it["pred"]["overall_pass"]) == 1 for it in items) else 0
+        # ================== 新订单规则 ==================
+        # 1) 至少一张图 overall_pass==1 (等价于 1,1,1,1,1)
+        # 2) 所有图 step3_not_in_mailbox==1
+
+        # 预测订单级
+        pred_all_not_in_mailbox = all(int(it["pred"].get("step3_not_in_mailbox", 0)) == 1 for it in items)
+        pred_any_full_pass = any(int(it["pred"].get("overall_pass", 0)) == 1 for it in items)
+        pred_order_pass = 1 if (pred_all_not_in_mailbox and pred_any_full_pass) else 0
+
+        # 真值订单级（保持你原来的策略：必须所有图都有 gt 才算订单 gt，否则 None）
         gt_order_pass = None
         if all(it["gt"] is not None for it in items):
-            gt_order_pass = 1 if any(int(it["gt"]["overall_pass"]) == 1 for it in items) else 0
+            gt_all_not_in_mailbox = all(int(it["gt"].get("step3_not_in_mailbox", 0)) == 1 for it in items)
+            gt_any_full_pass = any(int(it["gt"].get("overall_pass", 0)) == 1 for it in items)
+            gt_order_pass = 1 if (gt_all_not_in_mailbox and gt_any_full_pass) else 0
+        # ==============================================
 
         orders.append({
             "order_id": oid,
@@ -115,6 +140,7 @@ def main():
             "gt_order_pass": gt_order_pass,
             "images": items,
         })
+
 
     # 稳定排序：按 order_id
     orders.sort(key=lambda x: x["order_id"])

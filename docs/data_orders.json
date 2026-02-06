@@ -11674,8 +11674,8 @@
     },
     {
       "order_id": "general_SWX601710000019358712",
-      "pred_order_pass": 1,
-      "gt_order_pass": 1,
+      "pred_order_pass": 0,
+      "gt_order_pass": 0,
       "images": [
         {
           "image_name": "general_SWX601710000019358712_webp_2026_01_21_1769010430537_ee89961f-6177-4a1d-82f3-5ee0a8093643.webp.webp",
@@ -17115,7 +17115,7 @@
     },
     {
       "order_id": "general_SWX879970000015962341",
-      "pred_order_pass": 1,
+      "pred_order_pass": 0,
       "gt_order_pass": 1,
       "images": [
         {
