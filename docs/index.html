@@ -301,6 +301,14 @@
     if (v === 0) return "bad";
     return "";
   }
+
+  // ✅ 一致性着色：不一致红，一致绿，GT缺失黄（默认 dot 即 warn）
+  function dotClassByMatch(pred, gt){
+    if (gt === null || gt === undefined) return "";
+    if (pred === null || pred === undefined) return "";
+    return (pred === gt) ? "ok" : "bad";
+  }
+
   function valText(v){
     return (v === 0 || v === 1) ? String(v) : "-";
   }
@@ -327,7 +335,7 @@
         <div class="item ${i===activeIdx ? "active":""}" data-idx="${i}">
           <div class="id mono">${o.order_id}</div>
           <div class="miniPill">
-            <span class="dot ${dotClass(pred)}"></span>
+            <span class="dot ${dotClassByMatch(pred, gt)}"></span>
             <span>Pred=${valText(pred)} / GT=${gt===null? "-" : valText(gt)}</span>
           </div>
         </div>
@@ -368,7 +376,7 @@
 
     const pill = $("#orderPill");
     const dot = pill.querySelector(".dot");
-    dot.className = "dot " + dotClass(predOrder);
+    dot.className = "dot " + dotClassByMatch(predOrder, gtOrder);
     pill.querySelector("span:last-child").textContent =
       `订单 Pred=${valText(predOrder)} / GT=${gtOrder===null? "-" : valText(gtOrder)}`;
 
